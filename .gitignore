@@ -1,0 +1,7 @@
+.idea/
+*.iml
+*.class
+*.deb
+serveurWeb/usr/share/serveurWeb/out/
+serveurWeb/usr/share/serveurWeb/run/
+serveurWeb/usr/share/serveurWeb/var/log/

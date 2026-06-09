@@ -1,0 +1,13 @@
+[Unit]
+Description=SAE S2.03 - Serveur Web Configurable en Java
+
+[Service]
+Type=forking
+WorkingDirectory=/usr/share/serveurWeb
+ExecStart=/usr/share/serveurWeb/scripts/start.sh
+ExecStop=/usr/share/serveurWeb/scripts/stop.sh
+PIDFile=/usr/share/serveurWeb/run/myweb.pid
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

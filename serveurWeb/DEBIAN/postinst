@@ -1,0 +1,18 @@
+#!/bin/bash
+set -e
+
+if [ "$1" = "configure" ]; then
+    echo "Configuration du serveurWeb..."
+
+    # Rendre les scripts exécutables
+    chmod +x /usr/share/serveurWeb/scripts/start.sh
+    chmod +x /usr/share/serveurWeb/scripts/stop.sh
+
+    # Enregistrement et démarrage du service
+    if [ -d /run/systemd/system ]; then
+        systemctl daemon-reload
+        systemctl enable serverWeb.service || true
+        systemctl restart serverWeb.service || true
+    fi
+fi
+exit 0

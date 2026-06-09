@@ -1,0 +1,31 @@
+@startuml
+class ServerMain {
+    + configureClients(nomFichier : String) : void
+    + main() : void
+    - getTagValue(tag : String, element : Element, defaultValue : String) : String
+}
+
+class Site {
+    - {static} GREEN : String
+    - {static} RESET : String
+    - serverSocket : ServerSocket
+    - client : Socket
+    - documentRoot : String
+    - defaultIndex : String
+    - acceslog : String
+    - errorlog : String
+
+    + Site(port : int, documentRoot : String, defaultIndex : String, acceslog : String, errorlog : String)
+    + executer(interpreteur : String, commande : String) : String
+    + {static} getETag(filePath : String) : String
+    + startServer() : void
+    - handler() : void
+    - envoyerHeader(writer : PrintWriter, status : String, contentType : String, contentLength : long, isModifiedSince : boolean, etag : String, lastModified : long) : void
+    - log(message : String, isError : boolean) : void
+    - getSystemStatus() : String
+    - getPort() : String
+}
+
+ServerMain ..> Site : instancie et démarre
+
+@enduml

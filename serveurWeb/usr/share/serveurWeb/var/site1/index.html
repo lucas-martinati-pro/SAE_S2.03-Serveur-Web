@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Serveur Web - Site 1 (Port 7070)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>🌐 QwackServer - Site 1</h1>
+    <p class="subtitle">Ce site est hébergé sur le port <strong>7070</strong>.</p>
+
+    <h2>🖼️ Fichiers Statiques (Images)</h2>
+    <p>Le serveur supporte l'envoi de fichiers binaires avec le bon <code>Content-Type</code> (détecté par le serveur) :</p>
+    <div class="img-group">
+        <img src="images/l1.gif" alt="Image GIF">
+        <img src="images/n2.jpg" alt="Image JPEG">
+    </div>
+
+    <h2>🐚 Exécution de script côté serveur (SSI)</h2>
+    <p>En utilisant la balise spéciale <code>&lt;code interpreteur=«chemin»&gt;</code>, le serveur exécute dynamiquement la commande et insère le résultat dans la page :</p>
+
+    <div class="feature-card">
+        <strong>📅 Date & Heure du serveur (bash) :</strong><br>
+        <code><code interpreteur=«/bin/bash»>date</code></code>
+    </div>
+
+    <div class="feature-card">
+        <strong>🖥️ Système d'exploitation (bash) :</strong><br>
+        <code><code interpreteur=«/bin/bash»>uname -sr</code></code>
+    </div>
+
+    <h2>🔗 Navigation</h2>
+    <p>Vous pouvez consulter les autres sites configurés :</p>
+    <ul>
+        <li><a href="http://localhost:8070/">Accéder au Site 2 (Port 8070)</a></li>
+        <li><a href="http://localhost:8080/">Accéder au Site 3 (Port 8080)</a></li>
+    </ul>
+
+    <footer>
+        <p>SAÉ S2.03 - Serveur Web en Java</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,94 @@
+/* Style ultra simple - Site 1 (Cyber Blue) */
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+h1 {
+    color: #2563eb;
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 5px;
+}
+
+h2 {
+    color: #333;
+    margin-top: 20px;
+}
+
+a {
+    color: #2563eb;
+}
+
+.btn, .back-link {
+    display: inline-block;
+    background: #2563eb;
+    color: #fff !important;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+code {
+    background: #eee;
+    padding: 2px 5px;
+}
+
+pre {
+    background: #222;
+    color: #fff;
+    padding: 10px;
+    overflow-x: auto;
+}
+
+pre code {
+    background: none;
+    color: inherit;
+    padding: 0;
+}
+
+.feature-card {
+    background: #f0f4ff;
+    padding: 10px;
+    margin: 10px 0;
+    border-left: 3px solid #2563eb;
+}
+
+.img-group img {
+    max-height: 120px;
+    margin: 5px;
+    border: 1px solid #ddd;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #777;
+    font-size: 0.8em;
+}
+
+/* Navigation de dossiers */
+.dir-list {
+    list-style: none;
+    padding: 0;
+    border: 1px solid #ddd;
+}
+
+.dir-item {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.dir-item:last-child {
+    border-bottom: none;
+}
+
+.dir-item:hover {
+    background: #f0f4ff;
+}
+
+.dir-item a {
+    color: #333;
+    text-decoration: none;
+}

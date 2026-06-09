@@ -1,0 +1,8 @@
+Package: serveurWeb
+Version: 1.0
+Section: base
+Priority: optional
+Architecture: all
+Depends: bash, default-jre
+Maintainer: MARTINATI lucas
+Description: Lance les serveurs web
