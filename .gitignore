@@ -1,7 +1,12 @@
+# IntelliJ
 .idea/
 *.iml
+
+# Java
 *.class
+
+# Serveur web
 *.deb
-serveurWeb/usr/share/serveurWeb/out/
-serveurWeb/usr/share/serveurWeb/run/
-serveurWeb/usr/share/serveurWeb/var/log/
+out/
+run/
+log/
